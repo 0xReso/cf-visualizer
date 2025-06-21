@@ -38,38 +38,38 @@ export default function HomePage() {
         <Navbar />
       </div>
 
-      <main className="flex-1 flex flex-col items-center justify-center p-3">
+      <main className="flex-1 flex flex-col items-center justify-center p-4">
         <div className="relative z-20 w-full max-w-3xl flex flex-col items-center">
-          <header className="text-center mb-8">
+          <header className="text-center mb-9">
             <div className="relative">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-black tracking-tighter text-white mb-3 leading-none relative z-10">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter text-white mb-3 leading-none relative z-10">
                 CF Visualizer
               </h1>
               <div className="absolute inset-0 w-full h-full">
                 <SparklesCore
                   id="tsparticles"
                   background="transparent"
-                  minSize={0.4}
-                  maxSize={1.0}
-                  particleDensity={80}
+                  minSize={0.5}
+                  maxSize={1.2}
+                  particleDensity={90}
                   className="w-full h-full"
                   particleColor="#ffffff"
                 />
               </div>
             </div>
-            <p className="text-white mt-2 text-sm md:text-base max-w-2xl mx-auto font-light">
+            <p className="text-white mt-3 text-base md:text-lg max-w-2xl mx-auto font-light">
               Analyse and visualize your Codeforces performance. Compare profiles,
               track progress, and see your stats in a new light.
             </p>
           </header>
 
-          <form onSubmit={handleSearch} className="w-full max-w-xl mx-auto">
-            <div className="flex justify-center mb-4 gap-3">
+          <form onSubmit={handleSearch} className="w-full max-w-2xl mx-auto">
+            <div className="flex justify-center mb-5 gap-3">
               <button
                 type="button"
                 onClick={() => setActiveTab("single")}
                 className={cn(
-                  "px-5 py-2 text-xs font-semibold transition-all duration-300 rounded-xl border-2",
+                  "px-6 py-2.5 text-sm font-semibold transition-all duration-300 rounded-xl border-2",
                   activeTab === "single"
                     ? "bg-white text-black border-white shadow-lg hover:shadow-xl transform hover:scale-105"
                     : "bg-transparent text-white border-white/30 hover:border-white/60 hover:bg-white/10"
@@ -81,7 +81,7 @@ export default function HomePage() {
                 type="button"
                 onClick={() => setActiveTab("compare")}
                 className={cn(
-                  "px-5 py-2 text-xs font-semibold transition-all duration-300 rounded-xl border-2",
+                  "px-6 py-2.5 text-sm font-semibold transition-all duration-300 rounded-xl border-2",
                   activeTab === "compare"
                     ? "bg-white text-black border-white shadow-lg hover:shadow-xl transform hover:scale-105"
                     : "bg-transparent text-white border-white/30 hover:border-white/60 hover:bg-white/10"
@@ -98,7 +98,7 @@ export default function HomePage() {
                   placeholder="Enter Codeforces handle"
                   value={handle}
                   onChange={(e) => setHandle(e.target.value)}
-                  className="bg-dim-gray text-white border-neutral-700 h-9 text-sm w-full rounded-full px-4"
+                  className="bg-dim-gray text-white border-neutral-700 h-10 text-sm w-full rounded-full px-5"
                 />
               ) : (
                 <>
@@ -107,20 +107,20 @@ export default function HomePage() {
                     placeholder="Enter first handle"
                     value={handle1}
                     onChange={(e) => setHandle1(e.target.value)}
-                    className="bg-dim-gray text-white border-neutral-700 h-9 text-sm w-full rounded-full px-4"
+                    className="bg-dim-gray text-white border-neutral-700 h-10 text-sm w-full rounded-full px-5"
                   />
                   <Input
                     type="text"
                     placeholder="Enter second handle"
                     value={handle2}
                     onChange={(e) => setHandle2(e.target.value)}
-                    className="bg-dim-gray text-white border-neutral-700 h-9 text-sm w-full rounded-full px-4"
+                    className="bg-dim-gray text-white border-neutral-700 h-10 text-sm w-full rounded-full px-5"
                   />
                 </>
               )}
               <Button
                 type="submit"
-                className="w-full md:w-auto min-h-[36px] rounded-full font-semibold bg-white text-black hover:bg-gray-200 transition-colors text-sm px-6"
+                className="w-full md:w-auto min-h-[40px] rounded-full font-semibold bg-white text-black hover:bg-gray-200 transition-colors text-sm px-7"
               >
                 Search
               </Button>
