@@ -8,8 +8,8 @@ export default function Navbar() {
   const location = useLocation();
 
   return (
-    <nav className="container mx-auto px-6 py-6 flex justify-between items-center">
-      <h1 className="text-3xl font-bold text-white">CF Visualizer</h1>
+    <nav className="container mx-auto px-3 py-2 flex justify-between items-center">
+      <h1 className="text-lg font-bold text-white">CF Visualizer</h1>
       <a
         href="https://github.com/ResorcinolWorks/cf-visualizer"
         target="_blank"
@@ -18,13 +18,13 @@ export default function Navbar() {
         <ShineBorder 
           shineColor="#3b82f6" 
           duration={2}
-          borderWidth={2}
+          borderWidth={1}
         >
           <Button 
             variant="ghost" 
-            className="text-white hover:bg-gray-800 border-0 px-6 py-3 rounded-full transition-colors"
+            className="text-white hover:bg-gray-800 border-0 px-3 py-1.5 rounded-full transition-colors text-xs"
           >
-            <FaGithub className="mr-2 h-5 w-5" />
+            <FaGithub className="mr-1.5 h-3 w-3" />
             Star on GitHub
           </Button>
         </ShineBorder>
