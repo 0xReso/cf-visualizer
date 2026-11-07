@@ -11,7 +11,7 @@ export default function Navbar() {
     <nav className="container mx-auto px-3 py-2 flex justify-between items-center">
       <h1 className="text-lg font-bold text-white">CF Visualizer</h1>
       <a
-        href="https://github.com/ResorcinolWorks/cf-visualizer"
+        href="https://github.com/0xReso/cf-visualizer"
         target="_blank"
         rel="noopener noreferrer"
       >
