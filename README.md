@@ -3,9 +3,9 @@
 <div align="center">
 
 [![Live Demo](https://img.shields.io/badge/🚀%20Live%20Demo-Visit%20App-blue?style=for-the-badge)](https://cf-visualizer-rho.vercel.app/)
-[![GitHub](https://img.shields.io/github/license/ResorcinolWorks/cf-visualizer?style=for-the-badge)](LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/ResorcinolWorks/cf-visualizer?style=for-the-badge)](https://github.com/ResorcinolWorks/cf-visualizer/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/ResorcinolWorks/cf-visualizer?style=for-the-badge)](https://github.com/ResorcinolWorks/cf-visualizer/network)
+[![GitHub](https://img.shields.io/github/license/0xReso/cf-visualizer?style=for-the-badge)](LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/0xReso/cf-visualizer?style=for-the-badge)](https://github.com/0xReso/cf-visualizer/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/0xReso/cf-visualizer?style=for-the-badge)](https://github.com/0xReso/cf-visualizer/network)
 
 </div>
 
@@ -130,7 +130,7 @@ npm install -g pnpm
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/ResorcinolWorks/cf-visualizer.git
+   git clone https://github.com/0xReso/cf-visualizer.git
    cd cf-visualizer
    ```
 
@@ -275,7 +275,7 @@ Contributions are what make the open-source community such an amazing place to l
 
 ### 🐛 Reporting Issues
 
-Found a bug or have a feature request? Please [open an issue](https://github.com/ResorcinolWorks/cf-visualizer/issues) with:
+Found a bug or have a feature request? Please [open an issue](https://github.com/0xReso/cf-visualizer/issues) with:
 - Clear description of the problem/feature
 - Steps to reproduce (for bugs)
 - Expected vs actual behavior
